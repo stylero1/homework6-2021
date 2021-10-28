@@ -19,7 +19,7 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* do I need flex-wrap: nowrap? or is it default? */
+    
     
 }
 
@@ -186,3 +186,10 @@ header{
       }
       
   }
+
+  div.card ul li:nth-child(odd)::before{
+      content: "\1F44D"
+  }
+  div.card ul li:nth-child(even)::after{
+    content: "\1F44D"
+}
